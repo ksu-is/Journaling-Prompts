@@ -1,0 +1,58 @@
+import random
+
+def generate_prompt(category):
+    career_prompts = [
+        "What accomplishments are you most proud of in your career?",
+        "Describe a challenge you overcame at work and what you learned from it.",
+        "Where do you see yourself in your career in the next 5 years?",
+        
+    ]
+
+    love_prompts = [
+        "Describe a memorable moment with your partner.",
+        "What qualities do you appreciate most in your loved ones?",
+        "How do you express love to those around you?",
+        
+    ]
+
+    family_prompts = [
+        "What is your favorite family tradition?",
+        "Describe a cherished memory with your family.",
+        "How has your family shaped who you are today?",
+        
+    ]
+
+    if category == "career":
+        return random.choice(career_prompts)
+    elif category == "love":
+        return random.choice(love_prompts)
+    elif category == "family":
+        return random.choice(family_prompts)
+    else:
+        return "Invalid category selected."
+
+def main():
+    print("Welcome to the Journaling Prompt Generator!")
+    print("Please select a category for your journaling prompt:")
+    print("1. Career")
+    print("2. Love")
+    print("3. Family")
+
+    choice = input("Enter the number corresponding to your choice (1/2/3): ")
+
+    if choice == "1":
+        category = "career"
+    elif choice == "2":
+        category = "love"
+    elif choice == "3":
+        category = "family"
+    else:
+        print("Invalid choice. Please try again.")
+        return
+
+    prompt = generate_prompt(category)
+    print("Your journaling prompt is:")
+    print(prompt)
+
+if __name__ == "__main__":
+    main()
