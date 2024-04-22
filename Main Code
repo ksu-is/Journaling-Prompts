@@ -4,19 +4,19 @@ def generate_prompt(category):
     career_prompts = [
         "What accomplishments are you most proud of in your career?",
         "Describe a challenge you overcame at work and what you learned from it.",
-        "Where do you see yourself in your career in the next 5 years?",
+        "Where do you see yourself in your career in the next 10 years?",
         
     ]
 
     love_prompts = [
         "Describe a memorable moment with your partner.",
-        "What qualities do you appreciate most in your loved ones?",
+        "What qualities do you appreciate most in your significant other?",
         "How do you express love to those around you?",
         
     ]
 
     family_prompts = [
-        "What is your favorite family tradition?",
+        "What is your favorite family outing?",
         "Describe a cherished memory with your family.",
         "How has your family shaped who you are today?",
         
